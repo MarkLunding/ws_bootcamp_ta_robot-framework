@@ -1,4 +1,13 @@
 /libspecs/
 .project
+.pydevproject
+
+geckodriver.log
+log.html
+output.html
+report.html
+
 red.xml
+*.png
+
 
