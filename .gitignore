@@ -6,7 +6,7 @@ geckodriver.log
 log.html
 output.html
 report.html
-
+output.xml
 red.xml
 *.png
 

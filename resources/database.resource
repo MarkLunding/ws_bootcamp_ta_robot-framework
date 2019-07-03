@@ -1,10 +1,9 @@
 *** Settings ***
 Library    DatabaseLibrary
 
-
-
 *** Keywords ***
 Connect To ws_bootcampapp-backend
+    [Documentation]    Connects to the bootcampapp database with PyMySQL
     Connect To Database
     ...    dbapiModuleName=pymysql
     ...    dbName=ws_bootcampapp-backend
@@ -14,6 +13,7 @@ Connect To ws_bootcampapp-backend
     ...    dbPort=3306
 
 Disconnect from ws_bootcampapp-backend
+    [Documentation]    Disconects from the database
     Disconnect From Database
 
 Get Users From Database
@@ -28,7 +28,7 @@ Get Users From Database
 
 Extract Email and Password for user
     [Arguments]    ${users}    ${listNr}
-    [Documentation]    Gets the email and password from the userslist.
+    [Documentation]    Gets the email and password from the userslist for the provided user number.
     ${email}    Set Variable    ${users[${listNr}-1][1]}
     ${password}    Set Variable    ${users[${listNr}-1][4]}
     [Return]    ${email}    ${password}

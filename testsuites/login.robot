@@ -7,3 +7,4 @@ Login met bestaande gebruiker
     When Ik met deze gebruiker inlog
     Then zal ik de studentenpagina te zien krijgen
     [Teardown]    Sluit de bootcamp site
+
